@@ -13,6 +13,10 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+permissions:
+  contents: write
+  dependency-graph: write
+  security-events: write  # Added permission
 
 jobs:
   build:
